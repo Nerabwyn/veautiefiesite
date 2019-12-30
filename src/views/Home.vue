@@ -1,18 +1,23 @@
+<!--
+https://vuetifyjs.com/en/styles/flex
+https://vuetifyjs.com/en/styles/display
+
+-->
+
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-container fluid>
+    <v-layout wrap justify-start>
+      <v-flex xs12 sm6 md4 lg3 xl23>
+        <v-card>
+          <v-card-title>Data:</v-card-title>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "home",
-  components: {
-    HelloWorld
-  }
+  data: () => ({})
 };
 </script>
